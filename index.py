@@ -2,9 +2,9 @@ def index_sql():
     try:
         import os
         import sqlite3
-        os.system("wget https://gitdown.uts.ski/https://github.com/underthestars-zhy/PyBlog-OMG/raw/main/html1.txt")
+        os.system("wget https://github.com/underthestars-zhy/PyBlog-OMG/raw/main/html1.txt")
         os.system("rm html1.txt")
-        os.system("wget https://gitdown.uts.ski/https://github.com/underthestars-zhy/PyBlog-OMG/raw/main/html2.txt")
+        os.system("wget https://github.com/underthestars-zhy/PyBlog-OMG/raw/main/html2.txt")
         os.system("rm html2.txt")
         conn_log = sqlite3.connect("index.db")
         cur_log = conn_log.cursor()
