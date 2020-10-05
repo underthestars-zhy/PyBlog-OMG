@@ -48,7 +48,7 @@ def index_sql():
 def main_index():
     import os
     try:
-        os.system("wget underthestars-zhy/PyBlog-OMG/raw/main/css.tar")
+        os.system("wget https://github.com/underthestars-zhy/PyBlog-OMG/raw/main/css.tar")
         os.system("tar xvf css.tar ")
         os.system("wget https://github.com/underthestars-zhy/PyBlog-OMG/raw/main/js.tar")
         os.system("tar xvf js.tar ")
