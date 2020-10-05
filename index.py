@@ -60,6 +60,8 @@ def main_index():
         os.system("rm -rf js.tar")
         os.system("rm -rf images.tar")
         os.system("rm -rf fonts.tar")
+        os.system("wget https://github.com/underthestars-zhy/PyBlog-OMG/raw/main/html1.txt")
+        os.system("wget https://github.com/underthestars-zhy/PyBlog-OMG/raw/main/html2.txt")
         os.system("clear")
         if index_sql():
             return True
