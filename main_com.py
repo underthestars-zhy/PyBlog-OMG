@@ -7,10 +7,10 @@ def int_com(lst):
         if lst[1] == 1:
             return "+++++OMG-设置站点名称+++++\n=========================================="
 def com_input(lst):
-    if lst[0] == 1 :
+    if lst[0] == 2 :
         if lst[1] == 1:
             return "str"
 def com_str(lst):
-    if lst[0] == 1 :
+    if lst[0] == 2 :
         if lst[1] == 1:
-            return Tru
+            return True
