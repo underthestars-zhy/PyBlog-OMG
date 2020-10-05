@@ -1,0 +1,33 @@
+<div class="post-pagenav main-container">
+			<span class="post-pagenav-left"></span>
+			<span class="post-pagenav-right"></span>
+		</div>
+	</div>
+	<footer>
+		<div class="footer">
+			<div class="main-container">
+				<p id="system-copyright">Powered by PyBlog, theme <a href="https://www.miracles.pro/">Miracle</a> by <a href="https://guhub.cn/">Eltrac</a></p>
+				<p id="copyright">&copy; Copyright 2020 <a href="https://github.com/underthestars-zhy/PyBlog-OMG">OMG</a>, All rights reserved.</p>
+			</div>
+		</div>
+		<button class="button-float gotop-button" id="gotop">
+			<i class="iconfont icon-chevron-up"></i>
+		</button>
+		<script src="js/jquery.min.js"></script>
+		<script src="js/pjax.jquery.js"></script>
+		<script src="js/nprogress.js"></script>
+		<script src="js/gazeimg.js"></script>
+		<script src="js/smoothscroll.js"></script>
+		<script src="js/owo.min.js"></script>
+		<script src="js/pangu.min.js"></script>
+		<script src="js/notyf.min.js"></script>
+		<script src="js/highlight.js"></script>
+		<script src="js/highlight-line-number.js"></script>
+		<script src="js/tocbot.min.js"></script>
+		<script src="js/details-element-polyfill.js"></script>
+		<script src="js/miracle-lib.js"></script>
+		<script src="js/miracle-front.js"></script>
+		<script></script>
+	</footer>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="renderer" content="webkit">
+	<meta name="HandheldFriendly" content="true">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<title>PYOMG</title>
+	<meta itemprop="image" content="" />
+	<link rel="icon" href="css/axuh0-7zc71-001.ico">
+	<link rel="stylesheet" href="css/font_1165190_1djdjjwge4m.css" />
+	<link rel="stylesheet" href="css/css" />
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/gazeimg.min.css">
+	<link rel="stylesheet" href="css/nprogress.css">
+	<link rel="stylesheet" href="css/hint.min.css">
+	<link rel="stylesheet" href="css/textretty.min.css">
+	<link rel="stylesheet" href="css/owo.min.css">
+	<link rel="stylesheet" href="css/codestyle.css">
+	<link rel="stylesheet" href="css/notyf.min.css">
+	<link rel="stylesheet" href="css/tocbot.css">
+	<link rel="stylesheet" href="css/miracle.css">
+</head>
+<body class="layout-classic">
+	<header>
+		<nav class="nav">
+			<div class="nav-mobile small-screen">
+				<div class="nav-mobile-btn">
+					<div>
+						<button id="nav-mobile-open"><i class="iconfont icon-list"></i></button>
+					</div>
+					<div class="nav-mobile-capital"><a href="/">PYOMG</a>
+					</div>
+					<div>
+						<button id="nav-mobile-more"><i class="iconfont icon-block"></i></button>
+					</div>
+				</div>
+			</div>
+			<div class="body-container nav-regular large-screen">
+				<ul class="nav-content"><li class="nav-item nav-caption">
+					<a href="https://write.uts.ski/">PYOMG</a>
+					<li class="nav-item"><a href="https://write.uts.ski/index.php/about.html">About</a></li>
+					<li class="nav-item dropdown"><span>Class</span>
+						<ul class="dropdown-content">
+							<li class="dropdown-item">
+								<a href="https://write.uts.ski/index.php/category/default/" title="默认分类">默认分类</a>
+							</li>
+						</ul>
+				</ul>
+				<ul class="nav-divider"></ul>
+			</div>
+		</nav>
+		<div class="nav-mobile-panel small-screen hidden">
+			<ul class="nav-content nav-mobile-content">
+				<li class="nav-list-title"><span>PAGES</span></li>
+				<li class="nav-item">
+					<a href="https://write.uts.ski/index.php/about.html">About</a>
+				</li>
+				<li class="nav-item dropdown"><span>Class</span>
+				<ul class="dropdown-content">
+					<li class="dropdown-item">
+						<a href="https://write.uts.ski/index.php/category/default/" title="默认分类">默认分类</a>
+					</li>
+				</ul>
+			</ul>
+		</div>
+		<div class="nav-mobile-bar small-screen hidden">
+			<ul class="nav-icons nav-mobile-icons">
+				<li class="nav-icon">
+					<button id="mobile-dark-mode-btn">
+						<i class="iconfont icon-sun"></i>
+					</button>
+				</li>
+				<li class="nav-icon">
+					<button id="mobile-admin-btn">
+						<i class="iconfont icon-user"></i>
+					</button>
+				</li>
+				<li class="nav-icon">
+					<button id="mobile-search-btn">
+						<i class="iconfont icon-chaxun"></i>
+					</button>
+				</li>
+			</ul>
+		</div>
+	</header>
+	<div id="pjax-container">
+		<div class="banner">
+			<img src="https://api.uts.ski" class="banner-img">
+			<div class="banner-mask">
+				<div class="row">
+					<div class="banner-content col-lg-8 offset-lg-2 col-xxl-6 offset-xxl-3 theme-dark">
+						<h1 class="banner-title">PyBlog-OMG</h1>
+						<p>A theme specifically ported for PyBlog</p>
+					</div>
+				</div>
+			</div>
+		</div>

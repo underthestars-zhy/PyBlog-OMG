@@ -13,4 +13,4 @@ def com_input(lst):
 def com_str(lst):
     if lst[0] == 1 :
         if lst[1] == 1:
-            return True
+            return Tru
