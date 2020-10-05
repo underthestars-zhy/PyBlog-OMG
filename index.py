@@ -3,9 +3,7 @@ def index_sql():
         import os
         import sqlite3
         os.system("wget https://github.com/underthestars-zhy/PyBlog-OMG/raw/main/html1.txt")
-        os.system("rm html1.txt")
         os.system("wget https://github.com/underthestars-zhy/PyBlog-OMG/raw/main/html2.txt")
-        os.system("rm html2.txt")
         conn_log = sqlite3.connect("index.db")
         cur_log = conn_log.cursor()
         cur_log.execute('''Create table Html1(id int,statement text)''')
@@ -60,8 +58,6 @@ def main_index():
         os.system("rm -rf js.tar")
         os.system("rm -rf images.tar")
         os.system("rm -rf fonts.tar")
-        os.system("wget https://github.com/underthestars-zhy/PyBlog-OMG/raw/main/html1.txt")
-        os.system("wget https://github.com/underthestars-zhy/PyBlog-OMG/raw/main/html2.txt")
         os.system("clear")
         if index_sql():
             return True
