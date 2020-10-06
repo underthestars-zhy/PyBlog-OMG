@@ -2,11 +2,8 @@ def head_name(str):
     import sqlite3
     conn_log = sqlite3.connect("index.db")
     cur_log = conn_log.cursor()
-    cur_log.execute("delete from Html1 where id=9")
-    conn_log.commit()
-    tittle="<title>"+str+"</title>"
-    cur_log.execute('''insert into Html1 Values(9,'{}')'''.format(tittle))
-    conn_log.commit()
+    tittle = "<title>" + str + "</title>"
+    cur_log.execute('''update Html1 set statement={} where id=9'''.format(tittle))
     # =====================
     file = open("index.html", "w")
     cur_log.execute('select * from Html1')
