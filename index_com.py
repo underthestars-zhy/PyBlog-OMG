@@ -20,3 +20,28 @@ def head_name(str):
     # ====================
     conn_log.close()
     return True
+
+def main_name(str):
+    import sqlite3
+    conn_log = sqlite3.connect("index.db")
+    cur_log = conn_log.cursor()
+    mainame = '''<div class="nav-mobile-capital"><a href="/">'''+str+'''</a>'''
+    mainame1 = '''<a href="/">'''+str+'''</a>'''
+    cur_log.execute('''update Html1 set statement='{}' where id=33'''.format(mainame))
+    cur_log.execute('''update Html1 set statement='{}' where id=52'''.format(mainame1))
+    conn_log.commit()
+    # =====================
+    file = open("index.html", "w")
+    cur_log.execute('select * from Html1')
+    for write_out in cur_log.fetchall():
+        file.write(write_out[1])
+    file.close()
+    # ====================
+    file = open("index.html", "a")
+    cur_log.execute('select * from Html2')
+    for write_out in cur_log.fetchall():
+        file.write(write_out[1])
+    file.close()
+    # ====================
+    conn_log.close()
+    return True

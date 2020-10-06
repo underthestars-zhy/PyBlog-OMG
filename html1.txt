@@ -39,7 +39,7 @@
 			</div>
 			<div class="body-container nav-regular large-screen">
 				<ul class="nav-content"><li class="nav-item nav-caption">
-					<a href="https://write.uts.ski/">PYOMG</a>
+					<a href="/">PYOMG</a>
 					<li class="nav-item"><a href="https://write.uts.ski/index.php/about.html">About</a></li>
 					<li class="nav-item dropdown"><span>Class</span>
 						<ul class="dropdown-content">
