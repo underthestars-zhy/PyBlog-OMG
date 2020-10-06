@@ -3,7 +3,8 @@ def head_name(str):
     conn_log = sqlite3.connect("index.db")
     cur_log = conn_log.cursor()
     tittle = "<title>" + str + "</title>"
-    cur_log.execute('''update Html1 set statement={} where id=9'''.format(tittle))
+    cur_log.execute('''update Html1 set statement='{}' where id=9'''.format(tittle))
+    conn_log.commit()
     # =====================
     file = open("index.html", "w")
     cur_log.execute('select * from Html1')
