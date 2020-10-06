@@ -19,3 +19,4 @@ def head_name(str):
     file.close()
     # ====================
     conn_log.close()
+    return True
