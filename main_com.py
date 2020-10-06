@@ -13,8 +13,8 @@ def com_input(lst):
 def com_str(lst):
     if lst[0] == 2 :
         if lst[1] == 1:
-            from index_com import *
-            if head_name(lst[2]):
+            import index_com
+            if index_com.head_name(lst[2]):
                 return True
             else:
                 return False
