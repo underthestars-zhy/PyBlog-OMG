@@ -5,10 +5,15 @@ def index_sql():
         os.system("wget https://github.com/underthestars-zhy/PyBlog-OMG/raw/main/html1.txt")
         os.system("wget https://github.com/underthestars-zhy/PyBlog-OMG/raw/main/html2.txt")
         os.system("wget https://github.com/underthestars-zhy/PyBlog-OMG/raw/main/index_com.py")
+        os.system("wget https://github.com/underthestars-zhy/PyBlog-OMG/raw/main/page1.txt")
+        os.system("wget https://github.com/underthestars-zhy/PyBlog-OMG/raw/main/page2.txt")
+        os.system("wget https://github.com/underthestars-zhy/PyBlog-OMG/raw/main/theme_write.py")
         conn_log = sqlite3.connect("index.db")
         cur_log = conn_log.cursor()
         cur_log.execute('''Create table Html1(id int,statement text)''')
         cur_log.execute('''Create table Html2(id int,statement text)''')
+        cur_log.execute('''Create table Page1(id int,statement text)''')
+        cur_log.execute('''Create table Page2(id int,statement text)''')
         # ==============
         file = open("html1.txt", "r")
         i = 1
@@ -24,6 +29,24 @@ def index_sql():
         while i <= 33:
             read_ = str(file.readline())
             cur_log.execute('''insert into Html2 Values('{}','{}')'''.format(i, read_))
+            conn_log.commit()
+            i += 1
+        file.close()
+        # ====================
+        file = open("page1.txt", "r")
+        i = 1
+        while i <= 94:
+            read_ = str(file.readline())
+            cur_log.execute('''insert into Page1 Values('{}','{}')'''.format(i, read_))
+            conn_log.commit()
+            i += 1
+        file.close()
+        # ====================
+        file = open("page2.txt", "r")
+        i = 1
+        while i <= 34:
+            read_ = str(file.readline())
+            cur_log.execute('''insert into Page1 Values('{}','{}')'''.format(i, read_))
             conn_log.commit()
             i += 1
         file.close()
