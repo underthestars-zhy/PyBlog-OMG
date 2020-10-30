@@ -30,7 +30,7 @@
 					<div>
 						<button id="nav-mobile-open"><i class="iconfont icon-list"></i></button>
 					</div>
-					<div class="nav-mobile-capital"><a href="/">PYOMG</a>
+					<div class="nav-mobile-capital"><a href="index.html">PYOMG</a>
 					</div>
 					<div>
 						<button id="nav-mobile-more"><i class="iconfont icon-block"></i></button>
@@ -39,8 +39,8 @@
 			</div>
 			<div class="body-container nav-regular large-screen">
 				<ul class="nav-content"><li class="nav-item nav-caption">
-					<a href="/">PYOMG</a>
-					<li class="nav-item"><a href="https://write.uts.ski/index.php/about.html">About</a></li>
+					<a href="index.html">PYOMG</a>
+					<li class="nav-item"><a href="about.html">About</a></li>
 					<li class="nav-item dropdown"><span>Class</span>
 						<ul class="dropdown-content">
 							<li class="dropdown-item">
