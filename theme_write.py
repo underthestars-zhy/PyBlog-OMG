@@ -1,12 +1,15 @@
-def page_write(name, time, txt):
+def page_write(name, time_, txt):
     if name == 'About' or name == 'about' or name == 'ABOUT':
         try:
+            import time
             import sqlite3
             conn_log = sqlite3.connect("index.db")
             cur_log = conn_log.cursor()
-            maintime = "\t\t\t\t\t\t\t\t\t\t\t\t<i></i>Time: "+time+"\n"
+            maintime = "\t\t\t\t\t\t\t\t\t\t\t\t<i></i>Time: "+str(time_)+"\n"
             cur_log.execute('''update Page1 set statement='{}' where id=86'''.format(maintime))
             conn_log.commit()
+            print('Write Time OK')
+            time.sleep(1)
             # =====================
             file = open("about.html", "w")
             cur_log.execute('select * from Page1')
@@ -17,6 +20,7 @@ def page_write(name, time, txt):
             file = open("about.html", "a")
             import markdown
             file.write(str(markdown.markdown(txt)))
+            file.close()
             # ====================
             file = open("about.html", "a")
             cur_log.execute('select * from Page2')
