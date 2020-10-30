@@ -46,7 +46,7 @@ def index_sql():
         i = 1
         while i <= 34:
             read_ = str(file.readline())
-            cur_log.execute('''insert into Page1 Values('{}','{}')'''.format(i, read_))
+            cur_log.execute('''insert into Page2 Values('{}','{}')'''.format(i, read_))
             conn_log.commit()
             i += 1
         file.close()
@@ -59,6 +59,18 @@ def index_sql():
         # ====================
         file = open("index.html", "a")
         cur_log.execute('select * from Html2')
+        for write_out in cur_log.fetchall():
+            file.write(str(write_out[1]))
+        file.close()
+        # =====================
+        file = open("about.html", "w")
+        cur_log.execute('select * from Page1')
+        for write_out in cur_log.fetchall():
+            file.write(str(write_out[1]))
+        file.close()
+        # ====================
+        file = open("about.html", "a")
+        cur_log.execute('select * from Page2')
         for write_out in cur_log.fetchall():
             file.write(str(write_out[1]))
         file.close()
