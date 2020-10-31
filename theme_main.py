@@ -13,3 +13,9 @@ def theme_main ():
         return False
 def theme_tf ():
     return "OMG"
+
+def version():
+    return "Beat5"
+
+def least_version_url():
+    return 'https://github.com/underthestars-zhy/PyBlog-OMG/raw/main/version_theme.txt'
