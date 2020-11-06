@@ -1,4 +1,4 @@
-def page_write(name, time_, txt):
+def page_write(name, time_, txt, pic_url):
     if name == 'About' or name == 'about' or name == 'ABOUT':
         try:
             import time
@@ -7,6 +7,9 @@ def page_write(name, time_, txt):
             cur_log = conn_log.cursor()
             maintime = "\t\t\t\t\t\t\t\t\t\t\t\t<i></i>Time: "+str(time_)+"\n"
             cur_log.execute('''update Page1 set statement='{}' where id=86'''.format(maintime))
+            conn_log.commit()
+            pic = f"\t\t<img src=\"{pic_url}\" class=\"banner-img\">"
+            cur_log.execute('''update Page1 set statement='{}' where id=80'''.format(pic))
             conn_log.commit()
             print('Write Time OK')
             time.sleep(1)
@@ -29,5 +32,18 @@ def page_write(name, time_, txt):
             file.close()
             conn_log.close()
             return True
+        except:
+            return False
+    else:
+        try:
+            import time
+            import sqlite3
+            conn_log = sqlite3.connect("index.db")
+            cur_log = conn_log.cursor()
+            maintime = "\t\t\t\t\t\t\t\t\t\t\t\t<i></i>Time: " + str(time_) + "\n"
+            cur_log.execute('''update Page1 set statement='{}' where id=86'''.format(maintime))
+            conn_log.commit()
+            print('Write Time OK')
+            time.sleep(1)
         except:
             return False
