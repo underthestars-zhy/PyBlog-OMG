@@ -4,6 +4,7 @@ def head_name(str):
     cur_log = conn_log.cursor()
     tittle = "\t<title>" + str + "</title>\n"
     cur_log.execute('''update Html1 set statement='{}' where id=9'''.format(tittle))
+    cur_log.execute('''update Page1 set statement='{}' where id=9'''.format(tittle))
     conn_log.commit()
     # =====================
     file = open("index.html", "w")
@@ -14,6 +15,12 @@ def head_name(str):
     # ====================
     file = open("index.html", "a")
     cur_log.execute('select * from Html2')
+    for write_out in cur_log.fetchall():
+        file.write(write_out[1])
+    file.close()
+    # ====================
+    file = open("index.html", "a")
+    cur_log.execute('select * from Html3')
     for write_out in cur_log.fetchall():
         file.write(write_out[1])
     file.close()
@@ -43,6 +50,12 @@ def main_name(str):
         file.write(write_out[1])
     file.close()
     # ====================
+    file = open("index.html", "a")
+    cur_log.execute('select * from Html3')
+    for write_out in cur_log.fetchall():
+        file.write(write_out[1])
+    file.close()
+    # ====================
     conn_log.close()
     return True
 
@@ -62,6 +75,12 @@ def big_name(str):
     # ====================
     file = open("index.html", "a")
     cur_log.execute('select * from Html2')
+    for write_out in cur_log.fetchall():
+        file.write(write_out[1])
+    file.close()
+    # ====================
+    file = open("index.html", "a")
+    cur_log.execute('select * from Html3')
     for write_out in cur_log.fetchall():
         file.write(write_out[1])
     file.close()
@@ -89,6 +108,12 @@ def vice_name(str):
         file.write(write_out[1])
     file.close()
     # ====================
+    file = open("index.html", "a")
+    cur_log.execute('select * from Html3')
+    for write_out in cur_log.fetchall():
+        file.write(write_out[1])
+    file.close()
+    # ====================
     conn_log.close()
     return True
 
@@ -112,6 +137,12 @@ def head_ico(str):
         file.write(write_out[1])
     file.close()
     # ====================
+    file = open("index.html", "a")
+    cur_log.execute('select * from Html3')
+    for write_out in cur_log.fetchall():
+        file.write(write_out[1])
+    file.close()
+    # ====================
     conn_log.close()
     return True
 
@@ -131,6 +162,12 @@ def main_img(str):
     # ====================
     file = open("index.html", "a")
     cur_log.execute('select * from Html2')
+    for write_out in cur_log.fetchall():
+        file.write(write_out[1])
+    file.close()
+    # ====================
+    file = open("index.html", "a")
+    cur_log.execute('select * from Html3')
     for write_out in cur_log.fetchall():
         file.write(write_out[1])
     file.close()
