@@ -26,7 +26,11 @@ def head_name(str):
     file.close()
     # ====================
     conn_log.close()
-    return True
+    import main
+    if main.update_page():
+        return True
+    else:
+        return False
 
 def main_name(str):
     import sqlite3
