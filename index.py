@@ -4,6 +4,7 @@ def index_sql():
         import sqlite3
         os.system("wget https://github.com/underthestars-zhy/PyBlog-OMG/raw/main/html1.txt")
         os.system("wget https://github.com/underthestars-zhy/PyBlog-OMG/raw/main/html2.txt")
+        os.system("wget https://github.com/underthestars-zhy/PyBlog-OMG/raw/main/html3.txt")
         os.system("wget https://github.com/underthestars-zhy/PyBlog-OMG/raw/main/index_com.py")
         os.system("wget https://github.com/underthestars-zhy/PyBlog-OMG/raw/main/page1.txt")
         os.system("wget https://github.com/underthestars-zhy/PyBlog-OMG/raw/main/page2.txt")
@@ -100,9 +101,6 @@ def index_sql():
         file.close()
         # ====================
         conn_log.close()
-        print("index_sql OK")
-        import time
-        time.sleep(3)
         return True
     except:
         return False
@@ -122,9 +120,6 @@ def main_index():
         os.system("rm -rf images.tar")
         os.system("rm -rf fonts.tar")
         os.system("clear")
-        print("main_index OK")
-        import time
-        time.sleep(3)
         if index_sql():
             return True
         else:
