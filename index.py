@@ -107,13 +107,13 @@ def index_sql():
 def main_index():
     import os
     try:
-        os.system("wget https://github.com/underthestars-zhy/PyBlog-OMG/raw/main/css.tar")
+        os.system("wget https://gitdown.uts.ski/https://github.com/underthestars-zhy/PyBlog-OMG/blob/main/css.tar")
         os.system("tar xvf css.tar ")
-        os.system("wget https://github.com/underthestars-zhy/PyBlog-OMG/raw/main/js.tar")
+        os.system("wget https://gitdown.uts.ski/https://github.com/underthestars-zhy/PyBlog-OMG/blob/main/js.tar")
         os.system("tar xvf js.tar ")
-        os.system("wget https://github.com/underthestars-zhy/PyBlog-OMG/raw/main/images.tar")
+        os.system("wget https://gitdown.uts.ski/https://github.com/underthestars-zhy/PyBlog-OMG/blob/main/images.tar")
         os.system("tar xvf images.tar ")
-        os.system("wget https://github.com/underthestars-zhy/PyBlog-OMG/raw/main/fonts.tar")
+        os.system("wget https://gitdwon.uts.ski/https://github.com/underthestars-zhy/PyBlog-OMG/blob/main/fonts.tar")
         os.system("tar xvf fonts.tar ")
         os.system("rm -rf css.tar")
         os.system("rm -rf js.tar")
