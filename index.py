@@ -10,13 +10,13 @@ def index_sql():
         os.system("wget https://github.com/underthestars-zhy/PyBlog-OMG/raw/main/theme_write.py")
         conn_log = sqlite3.connect("index.db")
         cur_log = conn_log.cursor()
-        cur_log.execute('''Create table ThemeSet(id int, set text)''')
+        cur_log.execute('''Create table ThemeSet(id int, set_cmd text)''')
         cur_log.execute('''Create table Html1(id int, statement text)''')
         cur_log.execute('''Create table Html2(id int, statement text)''')
         cur_log.execute('''Create table Html3(id int, statement text)''')
         cur_log.execute('''Create table Page1(id int, statement text)''')
         cur_log.execute('''Create table Page2(id int, statement text)''')
-        cur_log.execute('''insert into ThemeSet Values(1,'Nothing')''')  # 设置tittle标签
+        cur_log.execute('''insert into ThemeSet Values(1,'PyBlog')''')  # 设置tittle标签
         cur_log.execute('''insert into ThemeSet Values(2,'Nothing')''')  # 设置导航栏标题
         cur_log.execute('''insert into ThemeSet Values(3,'Nothing')''')  # 设置背景图大标题
         cur_log.execute('''insert into ThemeSet Values(4,'Nothing')''')  # 设置小标题
@@ -100,6 +100,9 @@ def index_sql():
         file.close()
         # ====================
         conn_log.close()
+        print("index_sql OK")
+        import time
+        time.sleep(3)
         return True
     except:
         return False
@@ -119,6 +122,9 @@ def main_index():
         os.system("rm -rf images.tar")
         os.system("rm -rf fonts.tar")
         os.system("clear")
+        print("main_index OK")
+        import time
+        time.sleep(3)
         if index_sql():
             return True
         else:
