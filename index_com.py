@@ -36,8 +36,6 @@ def main_name(str):
     mainame1 = '''\t\t\t\t\t<a href="index.html">'''+str+'''</a>\n'''
     cur_log.execute('''update Html1 set statement='{}' where id=33'''.format(mainame))
     cur_log.execute('''update Html1 set statement='{}' where id=42'''.format(mainame1))
-    mainame = '''\t\t\t\t\t<div class="nav-mobile-capital"><a href="index.html">''' + str + '''</a>\n'''
-    mainame1 = '''\t\t\t\t\t<a href="index.html">''' + str + '''</a>\n'''
     cur_log.execute('''update Page1 set statement='{}' where id=33'''.format(mainame))
     cur_log.execute('''update Page1 set statement='{}' where id=42'''.format(mainame1))
     conn_log.commit()
