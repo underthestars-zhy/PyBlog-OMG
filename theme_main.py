@@ -22,9 +22,11 @@ def theme_main ():
         conn_log = sqlite3.connect("index.db")
         cur_log = conn_log.cursor()
         cur_log.execute('''Create table ThemeDown(tf int)''')
+        conn_log.commit()
         cur_log.execute('''insert into ThemeDown Values(1)''')
         conn_log.commit()
         conn_log.close()
+        return True
     except:
         return False
 def theme_tf ():
